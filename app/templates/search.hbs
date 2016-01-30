@@ -1,8 +1,8 @@
 <h3>Search results</h3>
 
-{{#if model}}
+{{#if model.items}}
   <ul class="search-results">
-    {{#each model as |repo|}}
+    {{#each model.items as |repo|}}
       <li class="item">
         <header class="item__header">
           <h3 class="item__header__title">
