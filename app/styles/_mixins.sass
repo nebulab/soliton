@@ -3,3 +3,21 @@
   color: white
   border-radius: 1em
   padding: .7em 1.3em
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
++keyframes(rotate)
+  0%
+    +transform(rotate(0deg))
+  50%
+    +transform(rotate(2deg))
+  100%
+    +transform(rotate(0deg))
