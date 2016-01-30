@@ -23,8 +23,10 @@
       font-size: smaller
 
       &__item
-        display: inline
+        display: block
         margin-left: 1em
+        +media($medium-screen)
+          display: inline
         i
           color: $secondary-color
 
