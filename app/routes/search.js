@@ -14,7 +14,11 @@ var repos = [
 ];
 
 export default Ember.Route.extend({
-  model() {
+  queryParams: {
+    q: { refreshModel: true }
+  },
+
+  model(params) {
     return repos;
   }
 });
