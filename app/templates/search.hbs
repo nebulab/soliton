@@ -4,17 +4,17 @@
   <ul class="search-results">
     {{#each model as |repo|}}
       <li class="item">
-        <header class="item-header">
-          <h3 class="item-header__title">
+        <header class="item__header">
+          <h3 class="item__header__title">
             author/repo-name
           </h3>
 
-          <p class="item-header__description">
+          <p class="item__header__description">
             Lorem ipsum
           </p>
         </header>
 
-        <section>
+        <section class="item__content">
           <a href="{{repo.link}}" target="_blank">
             <p>
               {{repo.title}}
