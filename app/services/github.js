@@ -12,6 +12,6 @@ export default Ember.Service.extend({
         order: 'desc',
         per_page: 100
       }
-    })
+    });
   }
 });

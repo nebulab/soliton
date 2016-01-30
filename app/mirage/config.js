@@ -4,6 +4,6 @@ export default function() {
       "total_count": db.packages.length,
       "incomplete_results": false,
       "items": db.packages
-    }
+    };
   });
 }

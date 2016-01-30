@@ -12,7 +12,8 @@ test('visiting /search', function(assert) {
 });
 
 test('searching for solidus package', function(assert) {
-  var packages = server.createList('package', 3);
+  var packages = server.createList('package', 3),
+      repoName = new RegExp(packages[0].full_name);
 
   visit('/search');
 
@@ -21,6 +22,6 @@ test('searching for solidus package', function(assert) {
 
   andThen(function() {
     assert.equal(find('li').length, 3);
-    assert.equal(find('li:first').text(), packages[0].name);
+    assert.ok(repoName.test(find('li:first').text()));
   });
 });
