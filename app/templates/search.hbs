@@ -1,9 +1,29 @@
 <h3>Search results</h3>
 
-{{#each model as |repo|}}
-  <a href="{{repo.link}}" target="_blank">
-    <p>{{repo.title}}</p>
-  </a>
-{{/each}}
+{{#if model}}
+  <ul class="search-results">
+    {{#each model as |repo|}}
+      <li class="item">
+        <header class="item-header">
+          <h3 class="item-header__title">
+            author/repo-name
+          </h3>
 
-{{outlet}}
+          <p class="item-header__description">
+            Lorem ipsum
+          </p>
+        </header>
+
+        <section>
+          <a href="{{repo.link}}" target="_blank">
+            <p>
+              {{repo.title}}
+            </p>
+          </a>
+        </section>
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  empty list
+{{/if}}
