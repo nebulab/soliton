@@ -1,5 +1,3 @@
-<h3>Search results</h3>
-
 {{#if model.items}}
   <ul class="search-results">
     {{#each model.items as |repo|}}
@@ -41,8 +39,8 @@
             </li>
           </ul>
 
-          <a href="{{repo.link}}" target="_blank">
-            {{repo.name}}
+          <a href="{{repo.link}}" target="_blank" class="item__content__link">
+            View on GitHub
           </a>
         </section>
       </li>

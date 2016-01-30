@@ -1,19 +1,33 @@
 &
   +outer-container
+  border: 1px solid $primary-color
+  padding: 1em
+  margin:
+    bottom: 1em
 
   &__header
     +span-columns(3)
     &__title
-      color: red
+      font-weight: bold
 
     &__description
-      color: grey
+      font-size: smaller
 
   &__content
     +span-columns(1)
 
     &__counters
+      +clearfix
+      text-align: right
+      font-size: smaller
+
       &__item
-        float: left
         display: inline
         margin-left: 1em
+        i
+          color: $secondary-color
+
+    &__link
+      +button
+      float: right
+      margin-top: 1em
