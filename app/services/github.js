@@ -8,7 +8,7 @@ export default Ember.Service.extend({
       method: 'GET',
       data: {
         q: `solidus+${keyword}+language:ruby+in:name,description,readme`,
-        sort: 'star',
+        sort: 'stars',
         order: 'desc',
         per_page: 100
       }
