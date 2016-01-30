@@ -1,12 +1,11 @@
 &
-  +outer-container
+  +outer-container(70%)
+  position: relative
 
   &__input
     +fill-parent
-    +media($large-screen)
-      +span-columns(9);
 
   &__submit
-    +fill-parent
-    +media($large-screen)
-      +span-columns(3);
+    position: absolute
+    right: 1em
+    top: 10px

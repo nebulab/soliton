@@ -1,4 +1,6 @@
 <div class="search-box">
   {{input class="search-box__input" value=searchInput}}
-  {{link-to "search" "search" (query-params q=searchInput) class="search-box__submit"}}
+  {{#link-to "search" (query-params q=searchInput) class="search-box__submit"}}
+    {{fa-icon 'fa-icon fa-search'}}
+  {{/link-to}}
 </div>
