@@ -14,8 +14,8 @@ test('visiting /search', function(assert) {
 test('searching for solidus package', function(assert) {
   visit('/search');
 
-  fillIn('input.search', 'Solidus Devise');
-  click('.do-search');
+  fillIn('.search-box__input', 'Solidus Devise');
+  click('.search-box__submit');
 
   andThen(function() {
     assert.equal(find('.package:first').text(), 'Solidus Devise');
