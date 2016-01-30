@@ -6,6 +6,9 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     sassOptions: {
       extension: 'sass'
+    },
+    emberCliFontAwesome: {
+      useScss: true
     }
   });
 

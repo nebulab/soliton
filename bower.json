@@ -12,7 +12,8 @@
     "neat": "^1.7.2",
     "pretender": "~0.10.1",
     "lodash": "~3.7.0",
-    "Faker": "~3.0.0"
+    "Faker": "~3.0.0",
+    "font-awesome": "~4.5.0"
   },
   "resolutions": {
     "ember": "2.2.0"

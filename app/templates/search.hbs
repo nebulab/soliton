@@ -15,10 +15,34 @@
         </header>
 
         <section class="item__content">
+          <ul class="item__content__counters">
+            <li class="item__content__counters__item">
+              {{fa-icon "fa-star"}}
+
+              <span>
+                {{repo.stargazers_count}}
+              </span>
+            </li>
+
+            <li class="item__content__counters__item">
+              {{fa-icon "fa-code-fork"}}
+
+              <span>
+                {{repo.forks}}
+              </span>
+            </li>
+
+            <li class="item__content__counters__item">
+              {{fa-icon "fa-eye"}}
+
+              <span>
+                {{repo.watchers_count}}
+              </span>
+            </li>
+          </ul>
+
           <a href="{{repo.link}}" target="_blank">
-            <p>
-              {{repo.title}}
-            </p>
+            {{repo.name}}
           </a>
         </section>
       </li>
