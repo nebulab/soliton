@@ -1,0 +1,9 @@
+<h3>Search results</h3>
+
+{{#each model as |repo|}}
+  <a href="{{repo.link}}" target="_blank">
+    <p>{{repo.title}}</p>
+  </a>
+{{/each}}
+
+{{outlet}}
