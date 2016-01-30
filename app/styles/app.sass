@@ -2,11 +2,10 @@
 @import "overrides/grid-settings"
 @import "lib/neat"
 
-$primary-color: #000
-$secondary-color: #fff
+@import "variables"
+@import "mixins"
 
-body
-  background: $primary-color
-  color: $secondary-color
-  +span-columns(6)
-  +shift(3)
+@import "elements"
+
+@import "component/button"
+@import "component/form-elements"
