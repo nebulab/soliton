@@ -1,18 +1,17 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
+  ajax: Ember.inject.service(),
+
   search(keyword) {
-    return [
-      {
-        id: 1,
-        title: 'solidus/solidus-alchemy',
-        link: 'http://google.com'
-      },
-      {
-        id: 2,
-        title: 'solidus/solidus-devise',
-        link: 'http://google.com'
+    return this.get('ajax').request('https://api.github.com/search/repositories', {
+      method: 'GET',
+      data: {
+        q: `solidus+${keyword}+language:ruby+in:name,description,readme`,
+        sort: 'star',
+        order: 'desc',
+        per_page: 100
       }
-    ];
+    })
   }
 });
