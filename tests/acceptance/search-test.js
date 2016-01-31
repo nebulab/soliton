@@ -1,5 +1,5 @@
 import { test } from 'qunit';
-import moduleForAcceptance from 'solidon/tests/helpers/module-for-acceptance';
+import moduleForAcceptance from 'soliton/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | search');
 

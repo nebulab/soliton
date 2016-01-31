@@ -1,7 +1,7 @@
 {
-  "name": "solidon",
+  "name": "soliton",
   "version": "0.0.0",
-  "description": "Small description for solidon goes here",
+  "description": "Ember app that searches for solidus extensions.",
   "private": true,
   "directories": {
     "doc": "doc",

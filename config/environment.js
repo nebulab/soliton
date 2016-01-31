@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'solidon',
+    modulePrefix: 'soliton',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
