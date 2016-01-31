@@ -1,5 +1,5 @@
 &
-  +outer-container(90%)
+  +outer-container(80%)
   border: 2px solid $primary-color
   background: white
   padding: 1em
@@ -7,7 +7,7 @@
     bottom: 1em
 
   &__header
-    +span-columns(3)
+    +span-columns(2)
     &__title
       font-weight: bold
 
@@ -15,7 +15,7 @@
       font-size: smaller
 
   &__content
-    +span-columns(1)
+    +span-columns(2)
 
     &__counters
       +clearfix
@@ -24,6 +24,7 @@
 
       &__item
         display: block
+        display: inline
         margin-left: 1em
         +media($medium-screen)
           display: inline
