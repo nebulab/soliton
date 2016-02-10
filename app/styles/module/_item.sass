@@ -1,18 +1,23 @@
 &
-  +outer-container(80%)
+  +outer-container
   border: 2px solid $primary-color
   background: white
   padding: 1em
   margin:
     bottom: 1em
 
+  &:hover
+    @include transition (all 0.5s ease)
+    border: 2px solid $secondary-color
+
   &__header
     +span-columns(2)
     &__title
       font-weight: bold
+      font-size: 1.375em
 
     &__description
-      font-size: smaller
+      line-height: 28px
 
   &__content
     +span-columns(2)
@@ -20,7 +25,6 @@
     &__counters
       +clearfix
       text-align: right
-      font-size: smaller
 
       &__item
         display: block
