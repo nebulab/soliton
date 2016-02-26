@@ -6,6 +6,9 @@ export default Ember.Component.extend({
   actions: {
     search() {
       this.get('search')(this.get('searchInput'));
+    },
+    clear: function() {
+      this.$().find('input').val('');
     }
   }
 });
