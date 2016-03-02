@@ -7,8 +7,9 @@ export default Ember.Component.extend({
     search() {
       this.get('search')(this.get('searchInput'));
     },
+
     clear: function() {
-      this.$().find('input').val('');
+      this.set('searchInput', '');
     }
   }
 });
