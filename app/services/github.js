@@ -12,7 +12,7 @@ export default Ember.Service.extend({
     let q = [ keyword,
               'solidus',
               'language:ruby',
-              'in:name,description,readme' ].join('+');
+              'in:name,description' ].join('+');
 
     let options = [ 'sort:stars',
                     'order:desc',
