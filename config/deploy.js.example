@@ -16,15 +16,15 @@ module.exports = function(deployTarget) {
     // configure other plugins for staging deploy target here
 
     ENV.s3 = {
-      accessKeyId: 'AKIAJUDQSSNN5NGMBJWQ',
-      secretAccessKey: 'BSG3EeycMH4cyOxFzCyRnfPefupfYpXCKBgQ78k4',
+      accessKeyId: 'your-secret-id',
+      secretAccessKey: 'your-secret-access-key',
       bucket: 'soliton-staging.nebulab.it',
       region: 'eu-central-1'
     };
 
     ENV['s3-index'] = {
-      accessKeyId: 'AKIAJUDQSSNN5NGMBJWQ',
-      secretAccessKey: 'BSG3EeycMH4cyOxFzCyRnfPefupfYpXCKBgQ78k4',
+      accessKeyId: 'your-secret-id',
+      secretAccessKey: 'your-secret-access-key',
       bucket: 'soliton-staging.nebulab.it',
       region: 'eu-central-1'
     };
@@ -39,15 +39,15 @@ module.exports = function(deployTarget) {
     // configure other plugins for production deploy target here
 
     ENV.s3 = {
-      accessKeyId: 'AKIAJUDQSSNN5NGMBJWQ',
-      secretAccessKey: 'BSG3EeycMH4cyOxFzCyRnfPefupfYpXCKBgQ78k4',
+      accessKeyId: 'your-secret-id',
+      secretAccessKey: 'your-secret-access-key',
       bucket: 'soliton.nebulab.it',
       region: 'eu-central-1'
     };
 
     ENV['s3-index'] = {
-      accessKeyId: 'AKIAJUDQSSNN5NGMBJWQ',
-      secretAccessKey: 'BSG3EeycMH4cyOxFzCyRnfPefupfYpXCKBgQ78k4',
+      accessKeyId: 'your-secret-id',
+      secretAccessKey: 'your-secret-access-key',
       bucket: 'soliton.nebulab.it',
       region: 'eu-central-1'
     };
