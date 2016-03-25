@@ -40,7 +40,11 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+Before deploying you need to configure your S3 credentials inside
+`config/deploy.js`. You'll find a `config/deploy.js.example` to use as a
+reference.
+
+Then you can run this to deploy your app:
 
 PRODUCTION: `ember deploy production`
 STAGING:    `ember deploy staging`
