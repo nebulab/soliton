@@ -1,7 +1,10 @@
 =button
   @include padding(15px 30px)
+  font-size: 0.889em
   background: $primary-color
   color: white
   text-decoration: none
-  @include media($small-screen)
-    @include padding(15px 50px)
+  transition: background-color .2s ease-in
+
+  &:hover
+    background: darken($primary-color, 5%)

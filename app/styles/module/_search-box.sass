@@ -1,11 +1,10 @@
 .search-box
-  @include margin(80px 0 130px)
   display: flex
-  @include media($small-screen)
-    @include margin(100px 0 150px)
 
   &__input
     @include size(100% 0)
 
   &__submit
     +button
+    @include padding(15px 50px)
+    font-size: 18px

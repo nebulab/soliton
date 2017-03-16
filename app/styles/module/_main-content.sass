@@ -2,4 +2,9 @@
   @include margin(0 auto)
   @include padding(0 8%)
   max-width: 1920px;
-  color: $white
+
+  .hero
+    @include margin(0 0 80px)
+    color: $white
+    @include media($small-screen)
+      @include margin(0 0 100px)
