@@ -1,20 +1,11 @@
-&
-  width: 80%;
-  margin: auto;
-  position: relative
-  margin-bottom: 1em
+.search-box
+  @include margin(80px 0 130px)
+  display: flex
+  @include media($small-screen)
+    @include margin(100px 0 150px)
 
   &__input
-    +fill-parent
-
-    &:hover, &:focus
-      border: 2px solid $secondary-color
+    @include size(100% 0)
 
   &__submit
-    position: absolute
-    right: 1em
-    top: 10px
-    color: $primary-color
-
-    &:hover
-      color: $secondary-color
+    +button

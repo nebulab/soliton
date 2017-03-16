@@ -1,8 +1,20 @@
 input
-  color: $primary-color
-  border: 2px solid
-  padding: .5em 1em
+  @include size(100% 0)
+  @include padding(30px 20px)
+  color: $tertiary-color
+  border: 0
   outline: 0
+  @include media($small-screen)
+    @include padding(30px 30px)
 
-  @include placeholder
-    color: $primary-color
+  &::-webkit-input-placeholder
+    color: $light-color
+
+  &:-moz-placeholder
+    color: $light-color
+
+  &::-moz-placeholder
+    color: $light-color
+
+  &:-ms-input-placeholder
+    color: $light-color

@@ -1,14 +1,5 @@
-&
-  position: relative
-  z-index: 3
-
-  .search-results
-    margin-top: -70px
-
-    .item
-      @import "item"
-
-  .no-results
-    text-align: center
-    margin-top: 20px
-    font-size: 1.875em
+.main-content
+  @include margin(0 auto)
+  @include padding(0 8%)
+  max-width: 1920px;
+  color: $white
