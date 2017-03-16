@@ -6,5 +6,7 @@
 
   &__submit
     +button
-    @include padding(15px 50px)
+    @include padding(15px 30px)
     font-size: 18px
+    @include media($small-screen)
+      @include padding(15px 50px)
