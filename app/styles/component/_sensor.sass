@@ -1,0 +1,39 @@
+.radar
+  @include position(absolute, 0 0 null null)
+  @include size(100%)
+  overflow: hidden
+  z-index: -1
+  @include media($small-screen)
+    min-height: 900px
+
+  &__sensor-left
+    @include position(absolute, 16em null null -15em)
+    @include size(600px)
+    background-image: url('images/sensor_left.svg')
+    background-repeat: no-repeat
+    transform: rotate(-35deg)
+    z-index: -1
+    @include media($small-screen)
+      @include size(800px)
+      @include position(absolute, 7em null null -15em)
+      animation: rotate_left 5s linear infinite alternate
+      transform: rotate(0)
+    @include media($medium-screen)
+      @include position(absolute, 5em null null -17em)
+      @include size(900px)
+
+  &__sensor-right
+      @include size(600px)
+      @include position(absolute, -10em -15em null null)
+      background-image: url('images/sensor_right.svg')
+      background-repeat: no-repeat
+      z-index: -1
+      transform: rotate(-40deg)
+      @include media($small-screen)
+        @include size(800px)
+        @include position(absolute, -10em -20em null null)
+        animation: rotate_right 5s linear infinite alternate
+        transform: rotate(0)
+      @include media($medium-screen)
+        @include size(900px)
+        @include position(absolute, -12em -20em null null)
