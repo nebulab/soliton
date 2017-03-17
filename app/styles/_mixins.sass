@@ -1,29 +1,22 @@
 =button
-  @include transition (all 0.5s ease)
-  background: $secondary-color
-  font-weight: 400
+  @include padding(15px 30px)
+  font-size: 0.889em
+  background: $primary-color
   color: white
-  border-radius: 2em
-  padding: .7em 1.3em
+  text-decoration: none
+  transition: background-color .2s ease-in
 
   &:hover
-    background: $primary-color
+    background: darken($primary-color, 5%)
 
++keyframes(rotate_left)
+  from
+    transform: rotate(-35deg)
+  to
+    transform: rotate(10deg)
 
-=keyframes($name)
-  @-webkit-keyframes #{$name}
-    @content
-  @-moz-keyframes #{$name}
-    @content
-  @-ms-keyframes #{$name}
-    @content
-  @keyframes #{$name}
-    @content
-
-+keyframes(rotate)
-  0%
-    +transform(rotate(0deg))
-  50%
-    +transform(rotate(10deg))
-  100%
-    +transform(rotate(0deg))
++keyframes(rotate_right)
+  from
+    transform: rotate(-60deg)
+  to
+    transform: rotate(-30deg)

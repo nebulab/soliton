@@ -1,14 +1,10 @@
-&
-  position: relative
-  z-index: 3
+.main-content
+  @include margin(0 auto)
+  @include padding(0 8%)
+  max-width: 1920px;
 
-  .search-results
-    margin-top: -70px
-
-    .item
-      @import "item"
-
-  .no-results
-    text-align: center
-    margin-top: 20px
-    font-size: 1.875em
+  .hero
+    @include margin(0 0 80px)
+    color: $white
+    @include media($small-screen)
+      @include margin(0 0 100px)

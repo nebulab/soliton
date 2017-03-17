@@ -1,22 +1,24 @@
 body
-  color: $primary-color
-  font-family: $main-font
-  font-size: 1.000em
-  font-weight: 400
+  background: $tertiary-color
+  color: $body-color
+  font-family: $sans-ff
+  font-size: $body-fs
+  -webkit-font-smoothing: antialiased
 
-a
-  text-decoration: none
-  font-weight: 100
+h1
+  @include margin(0 0 20px)
+  font-size: 2.000em
+  @include media($small-screen)
+    font-size: 3.333em
 
-h1, h2, h3, h4, h5, h6
-  margin: 0
-  padding: 0
-  font-weight: 100
+h2
+  @include margin(0)
+  font-family: $mono-ff
+  font-weight: 300
+  font-size: 0.889em
+  @include media($small-screen)
+    font-size: 1.111em
 
-ul
-  margin: 0
-  padding: 0
-  list-style-type: none
-
-.container
-  @include outer-container
+h3
+  @include margin(0 0 10px)
+  font-size: 1.333em

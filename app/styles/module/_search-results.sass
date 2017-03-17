@@ -1,0 +1,52 @@
+.search-results
+  @include margin(80px 0 0)
+  padding: 0
+  @include media($medium-screen)
+    @include margin(100px 0 0)
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+
+  .item
+    @include margin(0 0 30px)
+    @include padding(30px)
+    list-style: none
+    background: $white
+    @include media($medium-screen)
+      width: 49%
+
+    &__header
+      &__description
+        color: $light-color
+        font-family: $mono-ff
+        font-size: 0.889em
+
+    &__content
+      @include media($extra-small-screen)
+        @include margin(30px 0 0)
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+      &__counters
+        margin: 0
+        padding: 0
+        list-style: none
+
+        &__item
+          display: inline
+          margin-right: 15px
+          font-size: 16px
+
+          i
+            color: $secondary-color
+
+      &__link
+        +button
+        @include margin(20px 0 0)
+        display: inline-block
+        width: 100%
+        text-align: center
+        @include media($extra-small-screen)
+          margin: 0
+          width: auto

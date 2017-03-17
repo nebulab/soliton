@@ -1,6 +1,4 @@
 <div class="search-box">
   {{input class="search-box__input" placeholder="Eg. braintree, i18n" value=searchInput enter="search" escape-press='clear'}}
-  {{#link-to "search" (query-params q=searchInput) class="search-box__submit"}}
-    {{fa-icon 'fa-icon fa-search'}}
-  {{/link-to}}
+  {{link-to "Search" "search" (query-params q=searchInput) class="search-box__submit"}}
 </div>
