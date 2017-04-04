@@ -56,3 +56,13 @@ STAGING:    `ember deploy staging`
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## About
+
+![Nebulab](http://nebulab.it/assets/images/public/logo.svg)
+
+Cangaroo is funded and maintained by the [Nebulab](http://nebulab.it/) team.
+
+We firmly believe in the power of open-source. [Contact us](http://nebulab.it/contact-us/) if you like our work and you need help with your project design or development.
+
+[license]: MIT-LICENSE
