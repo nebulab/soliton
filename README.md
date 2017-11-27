@@ -61,7 +61,7 @@ STAGING:    `ember deploy staging`
 
 ![Nebulab](http://nebulab.it/assets/images/public/logo.svg)
 
-Cangaroo is funded and maintained by the [Nebulab](http://nebulab.it/) team.
+Soliton is funded and maintained by the [Nebulab](http://nebulab.it/) team.
 
 We firmly believe in the power of open-source. [Contact us](http://nebulab.it/contact-us/) if you like our work and you need help with your project design or development.
 
