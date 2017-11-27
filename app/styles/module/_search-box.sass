@@ -2,11 +2,13 @@
   display: flex
 
   &__input
-    @include size(100% 0)
+    @include padding(18px 20px)
+    @include media($small-screen)
+      @include padding(18px 30px)
 
   &__submit
     +button
-    @include padding(15px 30px)
+    @include padding(18px 30px)
     font-size: 18px
     @include media($small-screen)
-      @include padding(15px 50px)
+      @include padding(18px 50px)
